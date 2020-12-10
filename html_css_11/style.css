@@ -1,0 +1,66 @@
+/**
+ * Absolute Position: anchors element to the first element (overall box)
+ **/
+
+ .container-div {
+  position: absolute;
+  width: 400px;
+  margin-left: 20%;
+ }
+
+.box {
+  /* Absolute Position */
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #2db34a;
+  border: 2px solid black;
+}
+
+/* Box rules: percentages define anchors (i.e. position of each box relative to enclosing box) */
+
+.box-fixed {
+  position: fixed;
+  width: 200px;
+  height: 100px;
+  background: #eee;
+  z-index: 1;
+}
+
+.text-setup {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.box-text-1 {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  left: 160px;
+}
+
+.box-relative {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  background: #eee;
+  left: 160px;
+  top: 30px;
+}
+
+.box-absolute {
+  position: absolute;
+  background: #999;
+  z-index: 5;
+  bottom: 0px;
+  right: -20px;
+  width: 200px;
+  height: 100px;
+}
+.box-text-2 {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  left: 160px;
+  top: 40px;
+}
