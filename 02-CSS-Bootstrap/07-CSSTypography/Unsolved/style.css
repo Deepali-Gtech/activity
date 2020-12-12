@@ -1,4 +1,4 @@
- .center {
+ .bold {
     font-size: 18px;
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
@@ -6,14 +6,15 @@
 }
 
 
-.Big{
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;    font-weight: normal;
-    line-height: 1.6;
+.style{
+    font-size: 15px;
+    font-family:  sans-serif; 
+    font-weight: normal;
+    line-height: 1.1;
     font-weight: normal;
 }
 
-.Big:first-letter {
+.style:first-letter {
     float: left;
     margin: 10px 10px 0 0;
     padding: 0 20px;
@@ -25,7 +26,7 @@
     color: inherit;
   }
 
-.style {
+.big {
     font-size: 21px;
     font-family: "Times New Roman", sans-serif;    
     font-weight: normal;
