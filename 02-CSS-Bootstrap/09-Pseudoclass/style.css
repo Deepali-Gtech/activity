@@ -1,9 +1,9 @@
 /*
 class activity
-*/
+ */
 
 body{
-    background-color: rgb(160, 196, 207);
+    background-color:  rgb(160, 196, 207);
     font-size: 16px;
     text-align: center;
     position: relative;
@@ -17,11 +17,20 @@ header  {
     text-align: center;
 }
 
-.btn-secondary  {
+ .btn-secondary  { 
     color: rgb(176, 127, 255);
     background-color: rgb(165, 51, 98);
 }
 
-:hover h1 {
-    color: beige;
+
+a:hover {
+    background-color: yellow;
+}
+
+a:focus {
+    background-color: orangered
+}
+
+a:active{
+    background-color: green
 }
