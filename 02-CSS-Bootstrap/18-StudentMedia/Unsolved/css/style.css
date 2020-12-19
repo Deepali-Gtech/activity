@@ -11,46 +11,31 @@
   at browser widths above 768px
 */
 body {
-  /* Typography */
-  font-size: 18px;
-  line-height: 27px;
-
-  /* Visual */
-  background-color: #ccc;
+   font-size: 18px;
+   line-height: 27px;
+   background-color: #ccc;
 }
 
-/*
-  The width of the wrapper will be 1024px
+/*The width of the wrapper will be 1024px
   at browser widths above 768px
-*/
+ Box-model */
 .wrapper {
-  /* Box-model */
-  width: 1024px;
-
-  /* Positioning */
-  margin: 40px auto;
-}
-
+     width: 1024px;
+     margin: 40px auto;
+     }
+/* Box-model */
 #main-content,
 #sidebar {
-  /* Box-model */
   width: 500px;
-  padding: 30%;
+  padding: 30px;
 }
-
-#main-content {
-  /* Positioning */
+#main-content{
   float: left;
-
-  /* Visual */
-  background: #fff;
+  background: #eee;
 }
-
+/* Positioning */
 #sidebar {
-  /* Positioning */
   float: right;
-
-  /* Visual */
   background: #eee;
 }
 
@@ -58,7 +43,7 @@ body {
   These rules take effect when the browser's width
   is either 768px or less.
 */
-@media screen and (max-width: 500%) {
+@media screen and (max-width: 768px) {
   /* The body's bg color will be #333 */
   body {
     background-color: #333;
@@ -66,6 +51,10 @@ body {
 
   /* The wrapper's width will be 600px */
   .wrapper {
-    width: 100px;
+    width: 600px;
   }
-}
+  /* Positioning */
+  #sidebar {
+    float: left;
+    margin-top: 24px;
+    } 
