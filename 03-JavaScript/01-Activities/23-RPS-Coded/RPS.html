@@ -10,14 +10,25 @@
 
     <script>
 
-var choices = ["R", "p", "s"]
+var choices = ["r", "p", "s"]
 
 
 for (var i = 0; i < 10; i++) {
     // Generate a random decimal number between 0 and 1
-    var playerChoice = prompt("choose R, P, or s");
-    var computerChoice = choices[Math.floor(Math.random()*choices.length)];
-
+    var playerChoice = prompt("choose r, p, or s");
+    var random = Math.floor(Math.random()*choices.length);
+    alert(random);
+    var computerChoice = choices[random];
+    alert("Computer choice is " + computerChoice);
+    if (
+      (computerChoice == 'r' && playerChoice == 'p') ||
+      (computerChoice == 'p' && playerChoice == 's') ||
+      (computerChoice == 's' && playerChoice == 'r')   
+      ) {
+        alert ("You won!!");
+      } else {
+        alert ("Better luck next time!!");
+      }
     // Display in console
     console.log(RPS);
 }

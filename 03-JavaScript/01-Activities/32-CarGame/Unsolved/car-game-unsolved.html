@@ -52,9 +52,10 @@
       // ==============================================================================
 
       // TO DO: Log all of our car's current stats to the console.
-      function reWriteStats() {
-        
+      function logState() {
+        console.log(car);
       }
+
 
       // MAIN PROCESS
       // ==============================================================================
@@ -65,8 +66,13 @@
         // Prompt user to input a letter
         letter = prompt("Type 'h' to honk, 'd' to drive to work, 'w' to drive around the world, or 't' to get a tuneup.");
         
+        if (letter === w){
+          car.driveAroundWorld();
+        }
         // TO DO: Call the different car methods
+       logState();
       }
+
 
     </script>
 

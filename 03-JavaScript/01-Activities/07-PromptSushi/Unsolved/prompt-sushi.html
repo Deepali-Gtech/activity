@@ -7,13 +7,18 @@
   <body>
 
     <script type="text/javascript">
-
+    
     var doYouLike = confirm("Do you like Sushi");
-    var whatKindOf = promt("What kind of food");
+    
     // Write code here!
-      alert(doYouLike);
-      alert(whatKindOf);
-
+     if (doYouLike){
+      var whatKindOf = prompt("What kind of Sushi");
+      alert("Ok you like: " + whatKindOf);
+     }else {
+      var whatElse = prompt ("what food you really like");
+      alert("Ok that sounds fun: " + whatElse);
+    }
+      
     </script>
 
   </body>
