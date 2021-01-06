@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <header>
+        <h1>wecome to the speed reader</h1>
+    </header>
+    <h2 id="timer"></h2>
+    <br><br>
+    <h1 id="wordsPlayer"></h1>
+    <script>
+        var waitTime = prompt("How fast would you like to go");
+        // var speed = waitTime
+
+        var count = 5;
+        var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+        var counterStrings;
+        function timer() {
+            if (count <= 0) {
+                clearInterval(counter);
+                //counter ended, do something here
+                document.getElementById("timer").innerHTML = "";
+                counterStrings = setInterval(dispalyStrings, waitTime); 
+            } else {
+                document.getElementById("timer").innerHTML = count + " seconds remaining";
+                count--;
+            }
+        }
+
+        var index = 0;
+        function dispalyStrings() {
+            var value = ["Hey", "there", "hope", "all", "is", "well"];
+            if (index >= value.length) {
+                clearInterval(counterStrings);
+            } else {
+                document.getElementById("wordsPlayer").innerHTML = value[index];
+                index++;
+                
+            }
+        }
+       
+        
+    </script>
+
+    </script>
+</body>
+
+</html>

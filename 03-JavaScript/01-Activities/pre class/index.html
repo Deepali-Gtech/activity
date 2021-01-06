@@ -11,14 +11,19 @@
     <script>
         function max(a, b) {
             if (a > b) {
-                return (a + " is greater");
+                return(a);
             } else {
-                return (b + " is greater");
+                return (b);
             }
             
         }
+        var a= prompt("Enter first number");
+        var b= prompt("Enter second number");
         
-        alert(max(10, 5));
+        var result = max(a, b);
+
+        
+        alert(result);
     </script>
 </body>
 
